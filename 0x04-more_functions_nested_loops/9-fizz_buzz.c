@@ -1,25 +1,24 @@
 #include <stdio.h>
 /**
-* main - check the code.
-*
-* Return: Always return 0.
+ *  * main - print square of n size
+ *   * Return: 0 if succesful
 */
 int main(void)
 {
-int a;
-for (a = 1; a <= 100; a++)
+int x;
+for (x = 1; x <= 100; x++)
 {
-if (((a % 3) && (a % 5)) == 0)
+if (x % 3 == 0 && x % 5 == 0)
 printf("FizzBuzz");
-else if ((i % 3) == 0)
+else if (x % 3 == 0)
 printf("Fizz");
-else if ((i % 5) == 0)
+else if (x % 5 == 0)
 printf("Buzz");
 else
-printf("%d", i);
-if (i != 100)
+printf("%d", x);
+if (x < 100)
 printf(" ");
 }
-printf("\n");
+putchar('\n');
 return (0);
 }
