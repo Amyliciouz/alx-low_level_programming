@@ -1,9 +1,8 @@
 #include <stdio.h>
-int main(void)
 /*
- * a single line is added to this code
- * the program prints a[2] = 98
- */
+* for function main,one line is added to the code and it prints a[2] = 98
+*/
+int main(void)
 {
 int n;
 int a[5];
