@@ -1,5 +1,4 @@
 #include <stdio.h>
-/* In function main,the output of this code */
 int main(void)
 {
 int n;
