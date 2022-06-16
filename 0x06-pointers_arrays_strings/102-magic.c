@@ -1,5 +1,9 @@
 #include <stdio.h>
 int main(void)
+/*
+ * a single line is added to this code
+ * the program prints a[2] = 98
+ */
 {
 int n;
 int a[5];
