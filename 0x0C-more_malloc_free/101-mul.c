@@ -2,6 +2,7 @@
 #include <stdlib.h>
 #include <stdio.h>
 #include <ctype.h>
+
 /**
  * _is_zero - determines if any number is zero
  * @argv: argument vector.
@@ -29,6 +30,7 @@ printf("0\n");
 exit(0);
 }
 }
+
 /**
  * _initialize_array - set memery to zero in a new array
  * @ar: char array.
@@ -44,6 +46,7 @@ ar[i] = '0';
 ar[lar] = '\0';
 return (ar);
 }
+
 /**
  * _checknum - determines length of the number
  * and checks if number is in base 10.
@@ -63,6 +66,7 @@ exit(98);
 }
 return (ln);
 }
+
 /**
  * main - Entry point.
  * program that multiplies two positive numbers.
@@ -70,7 +74,7 @@ return (ln);
  * @argv: arguments vector.
  *
  * Return: 0 - success.
- */
+*/
 int main(int argc, char *argv[])
 {
 int ln1, ln2, lnout, add, addl, i, j, k, ca;
@@ -102,8 +106,7 @@ if (nout[0] != '0')
 break;
 lnout--;
 free(nout), nout = malloc(lnout + 1), nout = _initialize_array(nout, lnout);
-k = lnout - 1, i = ln1 - 1, j = ln2 - 1, ca = addl = 0;
-}
+k = lnout - 1, i = ln1 - 1, j = ln2 - 1, ca = addl = 0;		}
 if (j >= 0)
 {
 add = ((argv[1][i] - '0') * (argv[2][j] - '0')) + (nout[k] - '0') + addl;
