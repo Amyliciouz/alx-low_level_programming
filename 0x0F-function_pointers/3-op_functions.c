@@ -1,62 +1,67 @@
-include "3-calc.h"
-#include <stdio.h>
+#include "3-calc.h"
+
+int op_add(int a, int b);
+int op_sub(int a, int b);
+int op_mul(int a, int b);
+int op_div(int a, int b);
+int op_mod(int a, int b);
 
 /**
- * op_add - sum of a and b
- * @a: integer to add
- * @b: integer to add
- * Return: sum if succesful
+ * op_add - Returns the sum of two numbers.
+ * @a: The first number.
+ * @b: The second number.
+ *
+ * Return: The sum of a and b.
  */
-
 int op_add(int a, int b)
 {
-	return ((a) + (b));
+	return (a + b);
 }
+
 /**
- * op_sub - difference of a and b
- * @a: integer to subtract
- * @b: integer to subtract
- * Return: difference if succesful
+ * op_sub - Returns the difference of two numbers.
+ * @a: The first number.
+ * @b: The second number.
+ *
+ * Return: The difference of a and b.
  */
 int op_sub(int a, int b)
 {
-	return ((a) - (b));
+	return (a - b);
 }
+
 /**
- * op_mul - multiply a and b
- * @a: integer to multiply
- * @b: integer to multiply
- * Return: multiplication of a and b if succesful
+ * op_mul - Returns the product of two numbers.
+ * @a: The first number.
+ * @b: The second number.
+ *
+ * Return: The product of a and b.
  */
 int op_mul(int a, int b)
 {
-	return ((a) * (b));
+	return (a * b);
 }
+
 /**
- * op_div - divides a and b
- * @a: integer to divide
- * @b: integer to divide
- * Return: division if succesful
+ * op_div - Returns the division of two numbers.
+ * @a: The first number.
+ * @b: The second number.
+ *
+ * Return: The quotient of a and b.
  */
 int op_div(int a, int b)
 {
-	if (!b)
-	{
-		printf("Error\n");
-		exit(100);
-	}
-	return ((a) / (b));
+	return (a / b);
 }
+
 /**
- * op_mod - Module of a and b
- * @a: integer
- * @b: integer
- * Return: remainder if succesful
+ * op_mod - Returns the remainder of the division of two numbers.
+ * @a: The first number.
+ * @b: The second number.
+ *
+ * Return: The remainder of the division of a by b.
  */
 int op_mod(int a, int b)
 {
-	if (b)
-		return ((a) % (b));
-	printf("Error\n");
-	exit(100);
+	return (a % b);
 }
