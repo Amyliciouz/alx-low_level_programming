@@ -1,31 +1,15 @@
-#include "hash_tables.h"
-#include <stdio.h>
-/**
- *  *hash_table_print - prints all hash values with key
- *   *@ht: struct poniter
- *    *Return: void
-*/
-void hash_table_print(const hash_table_t *ht)
-{
-	int a = 0;
-	hash_node_t *temp;
-	unsigned long int i = 0;
+#!/usr/bin/python3
+"""module that calculates and returns the perimeter of an island"""
 
-	if (ht != NULL)
-	{
-	printf("{");
-	for (i = 0 ; i < ht->size; i++)
-	{
-	temp = ht->array[i];
-	while (temp != NULL)
-	{
-	if (a != 0)
-	printf(", ");
-	printf("'%s': '%s'", temp->key, temp->value);
-	temp = temp->next;
-	a = 87;
-	}
-	}
-	printf("}\n");
-	}
-}
+
+def island_perimeter(grid):
+	    """
+		        function that calculates and returns the perimeter of an island
+			    describe in grid
+			            Args:
+			               grid (list): list of list of integers representing an island
+						            0 represents a water zone, 1 represents a land zone
+									         one cell is a square with side length 1
+											          Returns:
+													          the perimeter of the island defined in grid
+															      """
